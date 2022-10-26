@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #logo,#header,#body,footer{
+                background-color: rgba(223, 217, 223, 0.61);
+                font-size: xx-large;
+                padding: 20px;
+                text-align: left;
+            }
+
+            #open{
+                width:10%;
+                float:left;
+                margin-top: 20px;
+            }
+
+            
+            #header{
+                width: 89%;
+                float:left;
+                text-align: center;
+                margin-top: 20px;
+                padding: 50px ;      
+            }
+
+            #body{
+                margin-top: 20px;
+                text-align: center;
+                float: right;
+                width: 90%;
+                height: 500px;
+                padding-top: 250px;
+            }
+
+            footer{
+                text-align: center;
+                float: left;
+                width: 100%;
+                margin-top: 20px;
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <div id="logo">Logo</div>
+        <div id="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times</a>
+        </div>
+        <div class="main">
+            <div style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776; open</div>
+            <div id="header">Header/Banner</div>
+            <div id="body">Body Area</div>
+        </div>
+        <footer>Footer</footer>
+        
+    </body>
+</html>

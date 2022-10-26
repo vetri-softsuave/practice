@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4</title>
+    <style>
+        .header{
+            display: flex;
+        }
+
+        .logo,.navi,footer{
+            padding: 20px;
+            background-color:aqua;
+            width:50%;
+            font-size: xx-large;
+        }
+
+        .navi{
+            text-align: right;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin-top: 1em;
+            gap: 1em;
+            
+        }
+
+        .box{
+            padding:70px;
+            background-color: aqua;
+            border-radius: 25px;
+        }
+
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+
+        .bigbox{
+            background-color: aqua;
+            font-size: xx-large;
+            padding: 100px;
+            margin:1em;
+            margin-left: 0;
+        }
+
+        @media (max-width:630px) {
+            .grid{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+        @media (max-width:470px)
+        {
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="navi">Navigation</div>
+    </div>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="flex">
+        <div class="bigbox">Box 1</div>
+        <div class="bigbox">Box 2</div>
+        <div class="bigbox">Box 3</div>
+    </div>
+    <footer style="width:100%;text-align: center;">Footer</footer>
+</body>
+</html>

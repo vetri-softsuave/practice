@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #logo,#navi,header,#intro,footer{
+                background-color: rgb(177, 169, 169);
+                text-align: left;
+                padding: 20px;
+                font-size: xx-large;
+                float:left;
+                width:50%;
+            }
+            #navi{
+                text-align: right;
+            }
+
+            header,#intro{
+                margin-top: 20px;
+                width:100%;
+                padding:50px;
+                text-align: center;
+            }
+            
+            .column{
+                width:30.5%;
+                background-color: rgb(177, 169, 169);
+                margin: 20px;
+                height:500px;
+                float: left;
+                text-align: center;
+                font-size: xx-large;
+                padding-top: 230px;
+            }
+
+            footer{
+                text-align: center;
+                width: 100%;
+            }
+            @media screen and (max-width:1440px){
+                .column{
+                    width: 100%;
+                    margin:0;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="logo">Logo</div>
+        <nav id="navi">Navigation</nav>
+        <header>Header/Banner</header>
+        <div id="intro">Intro Text Area</div>
+        <div class="column">Box 1</div>
+        <div class="column">Box 2</div>
+        <div class="column">Box 3</div>
+        <footer>Footer</footer>
+    </body>
+</html>
