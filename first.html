@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout 1</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #f1f1f1;
+                
+            }
+            
+            #logo,nav,header{
+                text-align: center;
+                background-color: #a5a1a1;
+                font-size: xx-large;
+                padding: 20px;
+                margin: 20px;
+            }
+            header{
+                padding: 50px;
+            }
+           
+            #logo{
+                text-align: left;
+            }
+            
+            #side{
+                width:40%;
+                height: 500px;
+                background-color: #a5a1a1;
+                text-align:center;
+                font-size: xx-large;
+                margin: 20px;
+                padding: 250px 0;
+                float: left;
+            }
+            #body{
+                float: left;
+                text-align: center;
+                width: 54%;
+                height: 500px;
+                background-color: #a5a1a1;
+                font-size: xx-large;
+                padding: 250px 0;
+                margin:20px;
+            }
+            #footer{
+                margin: 20px;
+                padding: 20px;
+                font-size: xx-large;
+                text-align: center;
+                background-color: #a5a1a1;
+            }
+            @media  screen and (max-width:1362px) {
+                #side,#body,#footer,#logo,header,nav{
+                    width:100%;
+                    margin-left:0;
+                    margin-right:0;
+
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logo">Logo</div>
+        <nav>Navigation</nav>
+        <header>Header/Banner</header>
+        <div style="overflow:auto">
+            <div id="side">Side Bar</div>
+            <div id="body" >Body Area</div>
+        </div>
+        <div id="footer">Footer</div>
+    </body>
+</html>
