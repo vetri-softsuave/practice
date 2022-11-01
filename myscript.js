@@ -8,3 +8,12 @@ arr = [1,2,3,4];
 console.log(typeof(arr));
 console.log(str.split("v"));
 console.log(parseInt(23.9));
+document.write("<br>hello vetri");
+const nums=["one","two","three","four"];
+
+obj={
+    "apple":200,
+    "orange":300,
+    1:"one"
+};
+console.log(obj[1])
