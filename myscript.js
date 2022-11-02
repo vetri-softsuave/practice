@@ -16,4 +16,4 @@ obj={
     "orange":300,
     1:"one"
 };
-console.log(obj[1])
+console.log(obj.values())
