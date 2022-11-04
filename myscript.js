@@ -1,18 +1,8 @@
-class person{
-    name = "vetri"
-    print(){
-        console.log("welcome vetri");
-    }
-}
+const btn = document.querySelector(".btn");
+const out = document.getElementById("out");
 
-class employee extends person{
-    position  = "software engineer";
+btn.addEventListener("click", change);
 
-    print(){
-        super.print();
-        console.log("bye vetri");
-    }
+function change() {
+  out.innerHTML = "welcome vetri";
 }
-const obj = new employee();
-console.log("employeee name "+obj.name);
-obj.print();
